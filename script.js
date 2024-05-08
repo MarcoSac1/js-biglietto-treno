@@ -19,8 +19,10 @@ if(userAge < 18){
     userPrice = (tripCost / 100) * 21
 } else if(userAge > 65){
     userPrice = (tripCost / 100) * 42
+}else{
+    userPrice = tripCost
 }
 
 
 // console.log(tripCost);
-document.getElementById('output').innerHTML= (userPrice).toFixed(2);
+document.getElementById('output').innerHTML= userPrice.toFixed(2);
