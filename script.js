@@ -14,13 +14,13 @@ const userAge=prompt('type your Age');
 const priceCost= 0.276;
 
 let tripCost = userDistance * priceCost;
-
+let userPrice
 if(userAge < 18){
-    (tripCost / 100) * 21
-} else() {
-
+    userPrice = (tripCost / 100) * 21
+} else if(userAge > 65){
+    userPrice = (tripCost / 100) * 42
 }
 
 
-console.log(tripCost);
-// document.getElementById('output').innerHTML= userPrice;
+// console.log(tripCost);
+document.getElementById('output').innerHTML= (userPrice).toFixed(2);
